@@ -31,9 +31,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'course.apps.CourseConfig',
+    'course.apps.CourseConfig', # separate course and users
     'users.apps.UsersConfig',
-    'crispy_forms',
+    'crispy_forms', # better looking forms
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

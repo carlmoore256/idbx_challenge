@@ -9,5 +9,5 @@ def home(request):
     }
     return render(request, 'course/home.html', context)
 
-def about(request):
-    return render(request, 'course/about.html', {'title': 'about'})
+def admin(request):
+    return render(request, 'course/admin.html', {'title': 'manage'})

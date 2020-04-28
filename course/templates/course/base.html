@@ -29,7 +29,7 @@
           <div class="collapse navbar-collapse" id="navbarToggle">
             <div class="navbar-nav mr-auto">
               <a class="nav-item nav-link" href="{% url 'courses-home' %}">Home</a>
-              <a class="nav-item nav-link" href="{% url 'courses-about' %}">About</a>
+              <a class="nav-item nav-link" href="{% url 'courses-manage' %}">Manage Courses</a>
             </div>
             <!-- Navbar Right Side -->
             <div class="navbar-nav">
@@ -60,19 +60,6 @@
           {% endif %}
           {% block content %}{% endblock %}
         </div>
-        <!-- <div class="col-md-4">
-          <div class="content-section">
-            <h3>All Courses</h3>
-            <p class='text-muted'>Filter courses
-              <ul class="list-group">
-                <li class="list-group-item list-group-item-light">Latest Posts</li>
-                <li class="list-group-item list-group-item-light">Announcements</li>
-                <li class="list-group-item list-group-item-light">Calendars</li>
-                <li class="list-group-item list-group-item-light">etc</li>
-              </ul>
-            </p>
-          </div>
-        </div> -->
       </div>
     </main>
 

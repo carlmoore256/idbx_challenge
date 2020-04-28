@@ -14,20 +14,15 @@
             <div>
               <small class="text-muted">date: {{ course.start_date|date:"M d Y" }} - {{ course.end_date|date:"M d Y" }}</small>
             </div>
-
-
-
             <div>
-              <small class="text-muted">{{ course.publishing_status }}</small>
+              {% if course.publishing_status %}
+                <small class="text-muted">Course published</small>
+              {% else %}
+                <small class="text-muted">Course not yet published</small>
+              {% endif %}
             </div>
           </div>
         </article>
 
-        <!-- <h3> {{ course.name }} </h3>
-        <p> Instructor: {{ course.instructor }} </p>
-        <p> start: {{ course.start_date }} - end: {{ course.end_date }} </p>
-        <p> Language: {{ course.language }} </p>
-        <p> {{ course.description }} </p>
-        <p> Status: {{ publishing_status }} </p> -->
     {% endfor %}
 {% endblock content %}
